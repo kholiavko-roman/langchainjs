@@ -425,6 +425,8 @@ export class ChatOllama
 
   topP?: number;
 
+  minP?: number;
+
   tfsZ?: number;
 
   typicalP?: number;
@@ -486,6 +488,7 @@ export class ChatOllama
     this.numPredict = fields?.numPredict;
     this.topK = fields?.topK;
     this.topP = fields?.topP;
+    this.minP = fields?.minP;
     this.tfsZ = fields?.tfsZ;
     this.typicalP = fields?.typicalP;
     this.repeatLastN = fields?.repeatLastN;
@@ -591,6 +594,7 @@ export class ChatOllama
         num_predict: this.numPredict,
         top_k: this.topK,
         top_p: this.topP,
+        min_p: this.minP,
         tfs_z: this.tfsZ,
         typical_p: this.typicalP,
         repeat_last_n: this.repeatLastN,

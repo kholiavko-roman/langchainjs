@@ -17,6 +17,7 @@ export interface OllamaCamelCaseOptions {
   numPredict?: number;
   topK?: number;
   topP?: number;
+  minP?: number;
   tfsZ?: number;
   typicalP?: number;
   repeatLastN?: number;

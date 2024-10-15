@@ -73,6 +73,7 @@ export interface OllamaRequestParams {
     tfs_z?: number;
     top_k?: number;
     top_p?: number;
+    min_p?: number;
     typical_p?: number;
     use_mlock?: boolean;
     use_mmap?: boolean;
